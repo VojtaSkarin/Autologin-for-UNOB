@@ -1,0 +1,33 @@
+{
+	"manifest_version": 3,
+	"name": "Autologin for UNOB",
+	"version": "1.0",
+	"description": "Automaticky vyplňuje přihlašovací údaje pro UNOB stránky, díky čemuž se není potřeba každý den znovu přihlašovat.",
+	
+	"icons": {
+		"16": "images/Favico_UO-51x58.png",
+		"32": "images/Favico_UO-51x58.png",
+		"48": "images/Favico_UO-51x58.png",
+		"128": "images/Favico_UO-51x58.png"
+	},
+	
+	"permissions": [
+		"storage"
+	],
+	
+	"content_scripts": [
+		{
+			"js": ["scripts/content_adfs.js"],
+			"matches": ["https://adfs.unob.cz/*"]
+		},
+		{
+			"js": ["scripts/content_moodle.js"],
+			"matches": ["https://moodle.unob.cz/*"]
+		}
+	],
+	
+	"action": {
+		"default_title": "Autologin for UNOB",
+		"default_popup": "popup/popup.html"
+  }
+}

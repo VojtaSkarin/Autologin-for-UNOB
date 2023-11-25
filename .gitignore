@@ -1,0 +1,16 @@
+# Ignore everything
+*.*
+
+# Unignore self
+!.gitignore
+
+# Unignore source files
+!*.html
+!*.js
+
+# Unignore images
+!Favico_UO-21x24.png
+!Favico_UO-32x36.png
+!Favico_UO-42x48.png
+!Favico_UO-51x58.png
+!znak_uo.jpg

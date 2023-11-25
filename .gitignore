@@ -5,6 +5,7 @@
 !.gitignore
 
 # Unignore source files
+!manifest.json
 !*.html
 !*.js
 

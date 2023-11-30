@@ -1,8 +1,8 @@
 {
 	"manifest_version": 3,
 	"name": "Autologin for UNOB",
-	"version": "1.0",
-	"description": "Automaticky vyplňuje přihlašovací údaje pro UNOB stránky, díky čemuž se není potřeba každý den znovu přihlašovat.",
+	"version": "1.1",
+	"description": "Automaticky vyplňuje přihlašovací údaje pro UNOB stránky, díky čemuž se není potřeba každý den znovu přihlašovat. Navíc vylepšuje stránku pro objednávání stravy.",
 	
 	"icons": {
 		"16": "images/Favico_UO-51x58.png",
@@ -23,6 +23,10 @@
 		{
 			"js": ["scripts/content_moodle.js"],
 			"matches": ["https://moodle.unob.cz/*"]
+		},
+		{
+			"js": ["scripts/content_jidelny.js"],
+			"matches": ["https://unob.jidelny-vlrz.cz/*"]
 		}
 	],
 	

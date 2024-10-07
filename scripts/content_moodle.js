@@ -10,11 +10,4 @@ submitButtonFirst = document.getElementsByClassName("btn btn-primary btn-block")
 submitButtonSecond = document.getElementById('loginbtn');
 submitButton = submitButtonFirst ?? submitButtonSecond;
 
-if (userNameInput !== null && passwordInput !== null) {
-	chrome.storage.sync.get(['userName', 'password'], function(login) {
-		userNameInput.value = login.userName;
-		passwordInput.value = login.password;
-
-		submitButton.click();
-    });
-}
+common(userNameInput, passwordInput, submitButton);

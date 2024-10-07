@@ -1,15 +1,41 @@
+<!DOCTYPE html>
 <html lang="cs-CZ">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
+
 <form>
-<label>Email</label><br>
-<input type="text" id="emailInput">
-<label>Heslo</label><br>
+
+<div class="email">
+<div>
+<input type="checkbox" id="userNameCheckbox" />
+<label>Předvyplnit email</label>
+</div>
+<div>
+<input type="text" id="userNameInput">
+</div>
+</div>
+
+<div class="password">
+<div>
+<input type="checkbox" id="passwordCheckbox" />
+<label>Předvyplnit heslo</label>
+</div>
+<div>
 <input type="text" id="passwordInput">
+</div>
+</div>
+
+<div>
+<input type="checkbox" id="autologinCheckbox" />
+<label>Přihlašovat automaticky</label>
+</div>
+
 <input id="submitButton" type="submit" value="Uložit">
 <script src="popup.js"></script>
+
 </form>
+
 </body>
 </html>
